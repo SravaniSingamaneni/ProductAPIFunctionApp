@@ -41,7 +41,7 @@ namespace ProductAPIFunctionApp.Models
         public string? ProductId {  get; set; }
 
         [BsonElement("quantity")]
-        public string? Quantity {  get; set; }
+        public int? Quantity {  get; set; }
 
         [BsonElement("price")]
         public decimal? Price {  get; set; }

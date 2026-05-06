@@ -24,7 +24,7 @@ namespace ProductAPIFunctionApp.Repository
 
         public async Task DeleteAsync(string id)
         {
-            var filter = Builders<Product>.Filter.Eq(x => x.Id == id);
+            var filter = Builders<Product>.Filter.Eq(x => x.Id, id);
             await _context.Products.DeleteOneAsync(filter);
         }
     }
